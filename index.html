@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#e4002b">
+    <title>Airtel SYNC | Udyam Digital prototype</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-frame">
+      <header class="topbar">
+        <a class="brand" href="#profile" aria-label="Airtel SYNC home">
+          <span class="airtel-mark">a</span>
+          <span class="brand-copy"><strong>Airtel <b>SYNC</b></strong><small>Udyam Digital</small></span>
+        </a>
+        <div class="topbar-right">
+          <span class="demo-label"><span class="pulse"></span> Hackathon demo</span>
+          <button class="avatar" aria-label="Demo profile">NS</button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="sidebar">
+          <div class="sidebar-intro">
+            <div class="eyebrow">SMALL BUSINESS ONBOARDING</div>
+            <h1>One simple journey</h1>
+            <p>Find a fit, see the price, and track setup in one place.</p>
+          </div>
+          <nav aria-label="Journey steps" class="step-nav">
+            <button class="step-link active" data-step="profile"><span class="step-number">01</span><span><b>Business profile</b><small>Tell us what you need</small></span></button>
+            <button class="step-link" data-step="advisor"><span class="step-number">02</span><span><b>Product advisor</b><small>Explore a suitable bundle</small></span></button>
+            <button class="step-link" data-step="quote"><span class="step-number">03</span><span><b>Quote</b><small>Review price and terms</small></span></button>
+            <button class="step-link" data-step="kyc"><span class="step-number">04</span><span><b>Smart KYC</b><small>Upload and review documents</small></span></button>
+            <button class="step-link" data-step="tracker"><span class="step-number">05</span><span><b>Order tracker</b><small>See what happens next</small></span></button>
+          </nav>
+          <div class="sidebar-note"><span class="shield">✓</span><span><b>Your information stays protected</b><small>This prototype uses synthetic hackathon data.</small></span></div>
+          <div class="sidebar-foot">YTL HACKATHON 2026 <span>·</span> TRACK A</div>
+        </aside>
+
+        <main id="screenContent" class="content" tabindex="-1"></main>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./vendor/tesseract/tesseract.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
